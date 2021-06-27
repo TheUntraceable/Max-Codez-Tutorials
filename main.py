@@ -1,5 +1,12 @@
-"""
-NOTE
-i will code this later if i have more time. if you want help asap read the readme.md file on the github page
-thank you.
-"""
+import discord
+from discord.ext import commands
+import music
+
+cogs = [music]
+
+client = commands.Bot(command_prefix = '?', intents=discord.Intents.all())
+
+for i in range(len(cogs)):
+  cogs[i].setup(client)
+
+client.run('ODU1NDc5NDA0Njc1MzM0MTg0.YMzFSA.dV1EU9wkYrP7IH0GVjpHOZ_vQf0')
